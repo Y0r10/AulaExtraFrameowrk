@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="babysoos.jpeg" alt="">
+    <input type="text" class="input"></input>
+    <span></span>
+
+</body>
+
+<script>
+    const input = document.querySelector("input");
+    const span = document.querySelector("span");
+
+    input.addEventListener('keyup',()=> {
+        var resp = input.value;
+        if(resp == 'chocolate'){
+            span.textContent = "Eu amo sorvete de chocolate!";
+        }else if(resp == 'flocos'){
+            span.textContent = "Ahh, mas chocolate é o meu favorito...";
+        }else if(resp == 'morango'){
+            span.textContent = "Que nojo, até flocos é melhor";
+        }else if(resp == 'yuri'){
+            span.textContent = "Lindo Lindo";
+        }
+
+
+    }) 
+</script>
+</html>
